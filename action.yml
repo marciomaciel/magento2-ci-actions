@@ -13,7 +13,7 @@ inputs:
     default: 'Magento2'
 runs:
   using: 'docker'
-  image: 'docker://magecore/magento-actions:latest'
+  image: 'Dockerfile'
 branding:
   icon: 'arrow-up-circle'
   color: 'blue'
