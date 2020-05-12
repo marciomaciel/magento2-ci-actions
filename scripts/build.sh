@@ -17,7 +17,7 @@ bin/magento setup:install \
   --db-host="mysql" \
   --db-name="magento" \
   --db-user="root" \
-  --db-password="" \
+  --db-password="magento" \
   --use-secure=0 \
   --use-rewrites=1 \
   --use-secure-admin=0 \
