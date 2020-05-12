@@ -1,9 +1,11 @@
 #!/usr/bin/env bash
 
 set -e
+mkdir -p ~/.ssh/
+echo $SSH_KEY > ~/.ssh/id_rsa
+chmod 0600 ~/.ssh/id_rsa
+ssh-keyscan github.com >> ~/.ssh/known_hosts
 
-echo $COMPOSER_HOME
-echo $SSH_KEY
 
 composer install
 chmod +x bin/magento
