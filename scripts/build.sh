@@ -2,6 +2,9 @@
 
 set -e
 
+echo $COMPOSER_HOME
+echo $SSH_KEY
+
 composer install
 chmod +x bin/magento
 
