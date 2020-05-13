@@ -32,8 +32,5 @@ bin/magento setup:install \
   --timezone="America/Sao_Paulo" \
   --cleanup-database
 
-bin/magento deploy:mode:set production --skip-compilation && \
-bin/magento setup:static-content:deploy --no-interaction --area=frontend -j 4 en_US pt_BR && \
-bin/magento setup:static-content:deploy --no-interaction --area=adminhtml -j 4 en_US pt_BR && \
-bin/magento setup:di:compile --no-interaction && \
+bin/magento deploy:mode:set developer
 composer dump-autoload --optimize --no-interaction
